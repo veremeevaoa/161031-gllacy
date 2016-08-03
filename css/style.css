@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto.woff") format("woff")
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.3%;
+  font-family: "Roboto", "Arial", serif;
+}
