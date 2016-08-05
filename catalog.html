@@ -48,9 +48,34 @@
       </div>
     </header>
     <main>
+      <h1>Сливочное мороженое</h1>
       <section class="filters">
         <form action="" method="get">
-          
+          <label for="sort">Сортировка:</label>
+          <select name="sort" id="sort">
+            <option value="popular">по популярности</option>
+            <option value="cheap-first">сначала недорогие</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
+          </select>
+          <label for="range">Цена:100 руб. - 500 руб.</label>
+          <input type="range" min="0" max="800" step="100" id="range">
+          <label for="">Жирность:</label>
+          <fieldset class="fatness">
+            <label><input type="radio" id="fat0" name="fat0"> 0%</label>
+            <label><input type="radio" id="fat10" name="fat10" checked> 10%</label>
+            <label><input type="radio" id="fat30" name="fat30"> до 30%</label>
+            <label><input type="radio" id="fat30up" name="fat30up"> выше 30%</label>
+          </fieldset>
+          <label for="">Наполнители:</label>
+          <fieldset class="filler">
+            <label><input type="checkbox" id="cocoa" name="cocoa" checked> шоколадные</label>
+            <label><input type="checkbox" id="shugar" name="shugar" checked> сахарные присыпки</label>
+            <label><input type="checkbox" id="fruit" name="fruit"> фрукты</label>
+            <label><input type="checkbox" id="syrup" name="syrup"> сиропы</label>
+            <label><input type="checkbox" id="jam" name="jam"> джемы</label>
+          </fieldset>
+          <input type="submit" value="Применить">
         </form>
       </section>
       <section class="catalog">
@@ -144,7 +169,7 @@
           <a class="page2" href="#">2</a>
           <a class="page3" href="#">3</a>
           <a class="page3" href="#">4</a>
-          <a class="page4" href="#">4</a>
+          <a class="page4" href="#">5</a>
           <a class="next" href="#">Вперед</a>
         </div>
       </section>
