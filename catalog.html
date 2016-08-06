@@ -11,7 +11,7 @@
   <body>
     <header class="main-page">
       <figure class="logo">
-        <img src="/img/" alt="Логотип компании" width="154" height="64">
+        <a href="index.html"><img src="/img/" alt="Логотип компании" width="154" height="64"></a>
       </figure>
       <nav class="main-menu">
         <ul class="menu-list">
@@ -34,20 +34,22 @@
         <a class="user-btn-basket" href="#">2 товара</a>
       </div>
       <div class="contact-header">        
-        <b class="working-hour">
+        <span class="working-hour">
           С 10 до 20, ежедневно
-        </b>
-        <b class="tel">
+        </span>
+        <span class="tel">
           8 812 450-25-25
-        </b>
-      </div>
-      <div class="breadcrumbs">
-        <a href="index.html">Главная</a> &raquo; 
-        <a href="#">Каталог</a> &raquo; 
-        <a href="catalog.html">Сливочное</a>
-      </div>
+        </span>
+      </div>     
     </header>
     <main>
+      <div class="breadcrumbs">
+        <ul>
+          <li><a href="index.html">Главная</a> &raquo;</li>
+          <li><a href="#">Каталог</a> &raquo;</li>
+          <li><a href="catalog.html">Сливочное</a></li>
+        </ul>
+      </div>
       <h1>Сливочное мороженое</h1>
       <section class="filters">
         <form action="" method="get">
@@ -164,13 +166,15 @@
           </p>
         </article>
         <div class="page-number">
-          <a class="prev" href="#">Назад</a>
-          <a class="page1" href="#">1</a>
-          <a class="page2" href="#">2</a>
-          <a class="page3" href="#">3</a>
-          <a class="page3" href="#">4</a>
-          <a class="page4" href="#">5</a>
-          <a class="next" href="#">Вперед</a>
+          <ul>
+            <li><a class="prev" href="#">Назад</a></li>
+            <li><a class="page1" href="#">1</a></li>
+            <li><a class="page2" href="#">2</a></li>
+            <li><a class="page3" href="#">3</a></li>
+            <li><a class="page4" href="#">4</a></li>
+            <li><a class="page5" href="#">5</a></li>
+            <li><a class="next" href="#">Вперед</a></li>
+          </ul>
         </div>
       </section>
     </main>
