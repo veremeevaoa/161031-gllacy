@@ -2,6 +2,10 @@
   font-family: "Roboto";
   src: url("/fonts/roboto.woff") format("woff")
 }
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("/fonts/robotomedium.woff") format("woff")
+}
 html,
 body {
   margin: 0;
@@ -13,6 +17,29 @@ body {
   margin: 0 auto;
   padding: 0 2.3%;
   font-family: "Roboto", "Arial", serif;
+  font-size: 16px;
+  line-height: 22px;
   background: #849d8f;
-  color: #fff;
+  color: #ffffff;
+}
+h2.about-title {
+  font-family: "Roboto Medium", "Arial", serif;
+  font-size: 24px;
+  line-height: 30px;  
+  color: #000000;
+  text-align: left;
+}
+b.slider-title {
+  font-family: "Roboto Bold", "Arial", serif;
+  font-size: 60px;
+  line-height: 60px;  
+  text-align: center;
+}
+/*Каталог*/
+main h1 {
+  font-family: "Roboto Bold", "Arial", serif;
+  font-size: 35px;
+  line-height: 41px;  
+  text-align: left;
+  font-weight: ;
 }
