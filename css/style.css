@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto.woff") format("woff")
+  src: url("../fonts/roboto.woff") format("woff")
 }
 @font-face {
   font-family: "Roboto Medium";
-  src: url("/fonts/robotomedium.woff") format("woff")
+  src: url("../fonts/robotomedium.woff") format("woff")
 }
 html,
 body {
@@ -22,12 +22,14 @@ body {
   background: #849d8f;
   color: #ffffff;
 }
-h2.about-title {
-  font-family: "Roboto Medium", "Arial", serif;
-  font-size: 24px;
-  line-height: 30px;  
-  color: #000000;
-  text-align: left;
+.box-center {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*Главная*/
+a {
+  color: #ffffff;
+  text-decoration: #ffffff;
 }
 b.slider-title {
   font-family: "Roboto Bold", "Arial", serif;
@@ -35,11 +37,53 @@ b.slider-title {
   line-height: 60px;  
   text-align: center;
 }
+.banner-left,
+.banner-right {
+  display: inline-block;
+  width: 420px;
+  height: 229px;
+}
+.banner-left {
+  background: #849d8f url(../img/raspberry-bg.png);
+}
+.banner-right {
+  background: #849d8f url(../img/shocolate-bg.png);
+}
+.catalog-item {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+h2.about-title {
+  font-family: "Roboto Medium", "Arial", serif;
+  font-size: 24px;
+  line-height: 30px;  
+  text-align: left;
+}
+.about-block {
+  width: 860px;
+  padding: 5px 20px;
+  background: #849d8f url(../img/waffle-bg.png) no-repeat;
+  color: #000000;
+}
+.about-block p {
+  display: inline-block;
+  width: 343px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: 400;
+  vertical-align: top;
+  margin-left: 55px;
+}
+footer div {
+  display: inline-block;
+}
 /*Каталог*/
 main h1 {
   font-family: "Roboto Bold", "Arial", serif;
   font-size: 35px;
   line-height: 41px;  
   text-align: left;
-  font-weight: ;
+  font-weight: 700;
 }
