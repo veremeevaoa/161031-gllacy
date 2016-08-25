@@ -36,9 +36,31 @@
           </ul>
         </nav>
         <div class="user">
-          <a class="user-btn-search" href="#">Поиск</a>
-          <a class="user-btn-login" href="#">Вход</a>
-          <a class="user-btn-basket" href="#">Пусто</a>
+          <div class="user-search">
+            <a class="user-btn-search" href="#">Поиск</a>
+            <div class="modal-content modal-search">
+              <form class="search" action="http://example.ru/" method="get">
+                <input type="search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+          <div class="user-login">
+            <a class="user-btn-login" href="#">Вход</a>
+            <div class="modal-content modal-enter">
+              <form class="enter" action="http://example.ru/" method="get">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <button class="mini-btn">Войти</button>
+            <div class="helper">
+          <a class="forget-pass" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </div>
+      </form>
+    </div>
+          </div>
+          <div class="user-basket">
+            <a class="user-btn-basket" href="#">Пусто</a>
+          </div>
         </div>
         <div class="header-contact">        
           <span class="working-hour">
@@ -93,32 +115,48 @@
 <!--    Популярные товары    -->
         <section class="catalog-hits block-row">
           <article class="catalog-item catalog-hit1 col col-1">
-            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61">
+            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61" alt="Хит">
             <p class="catalog-price">310 &#8381;<span class="units">/кг</span></p>
             <p class="catalog-title">
               <a class="card-title" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </p>
+            <div class="mask mask1 mask-hit">
+              <p class="catalog-price">310 &#8381;<span class="units">/кг</span></p>
+              <a class="mini-btn" href="">Быстрый просмотр</a>
+            </div>
           </article>
           <article class="catalog-item catalog-hit2 col col-1">
-            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61">
+            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61" alt="Хит">
             <p class="catalog-price">380 &#8381;<span class="units">/кг</span></p>
             <p class="catalog-title">
               <a class="card-title" href="">Сливочно-кофейное с кусочками шоколада</a>
             </p>
+            <div class="mask mask2 mask-hit">
+              <p class="catalog-price">380 &#8381;<span class="units">/кг</span></p>
+              <a class="mini-btn" href="">Быстрый просмотр</a>
+            </div>
           </article>
           <article class="catalog-item catalog-hit3 col col-1">
-            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61">
+            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61" alt="Хит">
             <p class="catalog-price">355 &#8381;<span class="units">/кг</span></p>
             <p class="catalog-title">
               <a class="card-title" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </p>
+            <div class="mask mask3 mask-hit">
+              <p class="catalog-price">355 &#8381;<span class="units">/кг</span></p>
+              <a class="mini-btn" href="">Быстрый просмотр</a>
+            </div>
           </article>
           <article class="catalog-item catalog-hit4 col col-1">
-            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61">
+            <img class="catalog-hit-mark" src="img/hit.png" width="61" height="61" alt="Хит">
             <p class="catalog-price">415 &#8381;<span class="units">/кг</span></p>
             <p class="catalog-title">
               <a class="card-title" href="">Сливочное крем-брюле с карамельной подливкой</a>
             </p>
+            <div class="mask mask4 mask-hit">
+              <p class="catalog-price">415 &#8381;<span class="units">/кг</span></p>
+              <a class="mini-btn" href="">Быстрый просмотр</a>
+            </div>
           </article>
         </section>
 <!--   О компании   -->
@@ -140,7 +178,7 @@
           <section class="mailing col col-2">
             <div class="basic-background">
               <p>Подпишитесь на нашу сладкую рассылку и будете    всегда в курсе всего самого вкусного, что у нас     происходит. Обещаем не спамить и не слать всякой     не нужной ерунды. Честно =) </p>
-              <form class="subscription" action="" method="post">
+              <form class="subscription" action="http://example.ru/" method="post">
                 <input type="email" name="email"                    placeholder="Электронная почта">
                 <button class="mini-btn" type="submit" value="Отправить">Отправить</button>
               </form>
@@ -149,7 +187,7 @@
         </div>
 <!--    Карта    -->
         <section class="card-place">
-          <img class="card-marker" src="img/pin.png" width="218" height="142">
+          <img class="card-marker" src="img/pin.png" width="218" height="142" alt="Маркер">
           <div class="card-contacts">
             <h3>Адрес главного офиса и офлайн магазина:</h3>
             <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -190,6 +228,40 @@
       </div>
     </footer>
     </div>
+    
+    
+    <div class="modal-content modal-link">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <span class="modal-title">Мы обязательно вам ответим!</span>
+      <form class="link" action="http://example.ru/" method="post">
+        <input type="text" name="user-name" placeholder="Как вас зовут?">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <textarea name="message" rows="3" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="mini-btn">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-content modal-basket-full">
+      <div class="product-table">
+        <div class="table-row">
+          <div class="table-cell cell-delete"></div>
+          <div class="table-cell cell-icon"></div>
+          <div class="table-cell cell-name"></div>
+          <div class="table-cell cell-amount"></div>
+          <div class="table-cell cell-price"></div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell cell-delete"></div>
+          <div class="table-cell cell-icon"></div>
+          <div class="table-cell cell-name"></div>
+          <div class="table-cell cell-amount"></div>
+          <div class="table-cell cell-price"></div>
+        </div>
+        <span class="summ">Итого 750 руб.</span>
+        <a class="mini-btn" href="#">Оформить заказ</a>
+      </div>
+
+    </div>
+    <div class="modal-overlay"></div>
     <script src="js/script.js"></script>
   </body>
 </html>

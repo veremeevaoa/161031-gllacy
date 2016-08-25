@@ -57,10 +57,10 @@
   Карта - 736
 Каталог - 787
   Хлебные крошки - 792
-  Фильтры - 825
-  Карточки - 901
-  Переключатель страниц - 938
-Подвал - 1071
+  Фильтры - 879
+  Карточки - 1112
+  Переключатель страниц - 1220
+Подвал - 1300
 */
 *{
   margin: 0;
@@ -71,15 +71,14 @@ body {
   font-family: "Roboto", "Arial", serif;
   font-size: 16px;
   line-height: 22px;
-  background: #849d8f;
-/*    url("../img/gllacy-catalog-900.jpg") no-repeat 50% 0;*/
+  background: #849d8f url("../img/gllacy-index-900.jpg") no-repeat 50% 0;
   color: #ffffff;
 }
 .box-center {
   width: 900px;
   margin: 0 auto;
   background: transparent;
-/*  opacity: 0.7;*/
+  opacity: 0.7;
 }
 .block-row {
   margin: 0 10px;
@@ -526,6 +525,7 @@ p.slider-title {
     background: 
     url("../img/ice-cream1.png") no-repeat 50% 85px,
     #849d8f url("../img/lighting1.png") no-repeat 50% 0;
+    opacity: 0.7;
 }
 #btn-2:checked ~ .toggler-bg { 
     background: 
@@ -653,7 +653,7 @@ p.slider-title {
   min-height: 372px;
   padding: 24px 20px 0;
   font-size: 0;
-  background: #849d8f url(../img/waffle-bg.png) no-repeat;
+  background: transparent url(../img/waffle-bg.png) no-repeat;
   color: #000000;
 }
 h2.about-title {
@@ -722,7 +722,7 @@ h2.about-title {
   display: inline-block;
   width: 285px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   font-weight: 700;
   color: #353535;
   
@@ -892,6 +892,52 @@ main .catalog-center {
   line-height: 18px;
   background: rgba(255, 255, 255, 0.2);
 }
+.filters .select-container,
+.filters .range-controls,
+.filters input[type=submit],
+.fatness {
+  margin-top: 7px;
+  margin-right: 10px;
+  padding: 8px 10px 7px;
+  border-radius: 18px;
+}
+.filters .select-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 194px;
+  padding: 0;
+  padding-right: 23px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+}
+.filters .select-container::after {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  content: "";
+  color: #ffffff;
+  background: transparent url("../img/sprite.png") no-repeat -487px -5px;
+}
+.filters select {
+  position: relative;
+  display: block;
+  width: 250px;
+  z-index: 5;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+.filters select:focus {
+  color: #000000;
+  background: #ffffff;
+}
 .filters form>label,
 .filters .price-controls{
   display: inline-block;
@@ -904,10 +950,13 @@ main .catalog-center {
   vertical-align: bottom;
   background: transparent;
 }
-.min-price,
-.max-price {
+.price-controls span {
+  white-space: pre-wrap;  
+}
+.filters .min-price,
+.filters .max-price {
   display: inline-block;
-  width: 27px;
+  width: 25px;
   font-family: "Roboto Medium", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
@@ -917,13 +966,13 @@ main .catalog-center {
   border: none;
   outline: none;
   box-shadow: none;
-  background: transparent;
+  background: #849d8f;
 }
 .filters .range-controls {
   position: relative;
   width: 220px;
-  min-height: 37px;
-  padding: 16px;
+  min-height: 36px;
+  padding: 7px 16px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -931,45 +980,39 @@ main .catalog-center {
   display: inline-block;
   width: 188px;
   height: 4px;
-  margin-left: 7px;
+  margin-left: 0px;
+  margin-top: 9px;
   background-color: rgba(248, 247, 244, 0.5);
 }
 .range-controls .bar {
   width: 105px;
   height: 4px;
-  margin-left: 30px;
+  margin-left: 25px;
   background-color:#f8f7f4;
 }
 .range-controls .toggle {
   position: absolute;
   display: block;
-  top: 8px;
+  top: 7px;
   left: 35px;
   width: 21px;
   height: 22px;
   background:#f8f7f4;
   cursor:pointer;
   border-radius:50%;
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .range-controls .max-toggle {
   margin-left: 98px;
 }
+.range-controls .toggle:hover {
+  width: 24px;
+  height: 24px;
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
 .filters .label-fatness {
   margin-left: 42px;
   margin-right: 100px;
-}
-.filters select,
-.filters .range-controls,
-.filters input[type=submit],
-.fatness {
-  margin-top: 5px;
-  margin-right: 10px;
-  padding: 7px 10px;
-  border-radius: 18px;
-}
-.filters select {
-  width: 195px;
-  color: #ffffff;
 }
 .filters .fatness {
   width: 415px;
@@ -984,7 +1027,7 @@ main .catalog-center {
   position: relative;
   display: inline-block;
   margin-right: 9px;
-  margin-left: 4px;
+  margin-left: 5px;
   padding-left: 31px;
   cursor: pointer;
 }
@@ -1058,7 +1101,7 @@ input[type=checkbox]:checked + label:active::before {
 .filters .fieldset-title {
   display: block;
   width: 250px;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 .filters input[type="submit"] {
   width: 145px;
@@ -1127,7 +1170,7 @@ input[type=checkbox]:checked + label:active::before {
 .mask .mini-btn {
   display: block;
   width: 193px;
-  margin-top: 105px;
+  margin-top: 103px;
   margin-left: 3px;
   padding: 14px;
   padding-top: 11px;
@@ -1171,6 +1214,9 @@ input[type=checkbox]:checked + label:active::before {
 }
 .catalog-item:hover .mask {
   display: block;
+}
+.catalog-hits .mask-hit {
+  padding-top: 76px;
 }
 /*Каталог - Переключатель страниц*/
 .page-number {
@@ -1265,13 +1311,13 @@ footer p {
 }
 footer .social-btn {
   width: 230px;
-  padding-top: 10px;
-  padding-left: 2px;
+  padding-top: 11px;
+  padding-left: 3px;
 }
 footer .social {
-  width: 32px;
-  height: 32px;
-  margin-right: 14px;
+  width: 31px;
+  height: 31px;
+  margin-right: 15px;
   border-bottom: none;
   box-shadow: 0 0 0 3px #c2cec7;
   border-radius: 50%;
@@ -1281,7 +1327,7 @@ footer .social {
   text-indent: -9999px;
 }
 footer .social-tw {
-  background-position: -733px -5px;
+  background-position: -734px -5px;
 }
 footer .social-inst {
   background-position: -335px -5px;
@@ -1375,6 +1421,92 @@ footer .copyright {
   font-family: "Roboto", "Arial", serif;
   color: #fefefe;
   font-weight: 400;
+}
+/*Поп-апы*/
+.modal-content {
+  position:absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: right;
+}
+.modal-basket-full {
+  width: 540px;
+  min-height: 186px;
+}
+.user-btn-basket.full:hover .modal-basket-full {
+  display: block;
+}
+.user-search,
+.user-login,
+.user-basket {
+  position: relative;
+  display: inline-block;
+}
+.modal-search {
+  width: 341px;
+  min-height: 84px;
+}
+.user-btn-search:hover .modal-search {
+  display: block;
+}
+.modal-enter {
+  width: 277px;
+  min-height: 214px;
+  padding: 20px 17px 22px 19px;
+}
+.user-btn-login:hover .modal-enter {
+  display: block;
+}
+.modal-link {
+  width: 478px;
+  min-height: 443px;
+}
+.modal-content-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 18px;
+  height: 17px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*

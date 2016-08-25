@@ -65,16 +65,18 @@
           <form action="" method="get">
             <label for="sort">Сортировка:</label>
             <div class="price-controls">
-                Цена: <input class="min-price" type="text" value="100"> руб. - 
+                Цена: <input class="min-price" type="text" value="100"><span>руб. - </span>
                 <input class="max-price" type="text" value="500"> руб.
             </div>
             <label class="label-fatness" for="">Жирность:</label>
-            <select name="sort" id="sort">
-              <option class="sort-item" value="popular">по популярности</option>
-              <option class="sort-item" value="cheap-first">сначала недорогие</option>
-              <option class="sort-item" value="expensive-first">сначала дорогие</option>
-              <option class="sort-item" value="fatness">по жирности</option>
-            </select>
+            <div class="select-container">
+              <select name="sort" id="sort">
+                <option class="sort-item" value="popular" selected>по популярности</option>
+                <option class="sort-item" value="cheap-first">сначала недорогие</option>
+                <option class="sort-item" value="expensive-first">сначала дорогие</option>
+                <option class="sort-item" value="fatness">по жирности</option>
+              </select>
+            </div>
             <div class="range-controls">
                 <div class="scale"><div class="bar"></div></div>
                 <div class="toggle min-toggle"></div>
