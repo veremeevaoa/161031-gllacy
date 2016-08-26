@@ -34,9 +34,53 @@
           </ul>
         </nav>
         <div class="user">
-          <a class="user-btn-search" href="#">Поиск</a>
-          <a class="user-btn-login" href="#">Вход</a>
-          <a class="user-btn-basket full-basket" href="#">2 товара</a>
+          <div class="user-search">
+            <a class="user-btn-search" href="#">Поиск</a>
+            <div class="modal-content modal-search">
+              <form class="search" action="http://example.ru/" method="get">
+                <input type="search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+          <div class="user-login">
+            <a class="user-btn-login" href="#">Вход</a>
+            <div class="modal-content modal-enter">
+              <form class="enter" action="http://example.ru/" method="get">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <button class="mini-btn">Войти</button>
+              </form>
+              <div class="helper-wrapper">
+                <div class="helper">
+                  <a class="forget-pass" href="#">Забыли пароль?</a>
+                  <a class="new-registration" href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-basket full">
+            <a class="user-btn-basket full-basket" href="#">2 товара</a>
+            <div class="modal-content modal-basket-full">
+              <div class="product-table">
+                <div class="table-row">
+                  <div class="table-cell cell-delete"><button type="button" class="btn-delete"></button></div>
+                  <div class="table-cell cell-icon"><img src="img/catalog-card1.png" width="33" height="33" alt="Мороженое"></div>
+                  <div class="table-cell cell-name">Пломбир с апельсиновым джемом</div>
+                  <div class="table-cell cell-amount">1,5 кг*<span>200 руб.</span></div>
+                  <div class="table-cell cell-price">300 руб.</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell cell-delete"><button type="button" class="btn-delete"></button></div>
+                  <div class="table-cell cell-icon"><img src="img/catalog-card3.png" width="33" height="33" alt="Мороженое"></div>
+                  <div class="table-cell cell-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+                  <div class="table-cell cell-amount">1,5 кг*<span>300 руб.</span></div>
+                  <div class="table-cell cell-price">450 руб.</div>
+                </div>
+              </div>
+              <span class="summ">Итого 750 руб.</span>
+              <a class="mini-btn" href="#">Оформить заказ</a>  
+            </div>
+          </div>
         </div>
         <div class="header-contact">        
           <span class="working-hour">
@@ -62,13 +106,13 @@
         <h1>Сливочное мороженое</h1>
 <!--   Фильтры   -->
         <section class="filters">
-          <form action="" method="get">
+          <form action="http://example.ru/" method="get">
             <label for="sort">Сортировка:</label>
             <div class="price-controls">
                 Цена: <input class="min-price" type="text" value="100"><span>руб. - </span>
                 <input class="max-price" type="text" value="500"> руб.
             </div>
-            <label class="label-fatness" for="">Жирность:</label>
+            <label class="label-fatness">Жирность:</label>
             <div class="select-container">
               <select name="sort" id="sort">
                 <option class="sort-item" value="popular" selected>по популярности</option>
@@ -92,7 +136,7 @@
               <input type="radio" id="fat30up" name="fat" value="fat30up">
               <label for="fat30up"> выше 30%</label>
             </fieldset>
-            <label class="fieldset-title" for="">Наполнители:</label>
+            <label class="fieldset-title">Наполнители:</label>
             <fieldset class="filler">
               <input type="checkbox" id="cocoa" name="cocoa" checked><label for="cocoa"> шоколадные</label>
               <input type="checkbox" id="shugar" name="shugar" checked><label for="shugar"> сахарные присыпки</label>

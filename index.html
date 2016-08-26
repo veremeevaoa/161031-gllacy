@@ -51,15 +51,37 @@
                 <input type="email" placeholder="Электронная почта">
                 <input type="password" placeholder="Пароль">
                 <button class="mini-btn">Войти</button>
-            <div class="helper">
-          <a class="forget-pass" href="#">Забыли пароль?</a>
-          <a class="new-registration" href="#">Новая регистрация</a>
-        </div>
-      </form>
-    </div>
+              </form>
+              <div class="helper-wrapper">
+                <div class="helper">
+                  <a class="forget-pass" href="#">Забыли пароль?</a>
+                  <a class="new-registration" href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="user-basket">
             <a class="user-btn-basket" href="#">Пусто</a>
+            <div class="modal-content modal-basket-full">
+              <div class="product-table">
+                <div class="table-row">
+                  <div class="table-cell cell-delete"></div>
+                  <div class="table-cell cell-icon"></div>
+                  <div class="table-cell cell-name"></div>
+                  <div class="table-cell cell-amount"></div>
+                  <div class="table-cell cell-price">300</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell cell-delete"></div>
+                  <div class="table-cell cell-icon"></div>
+                  <div class="table-cell cell-name"></div>
+                  <div class="table-cell cell-amount"></div>
+                  <div class="table-cell cell-price">450</div>
+                </div>
+                <span class="summ">Итого 750 руб.</span>
+                <a class="mini-btn" href="#">Оформить заказ</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="header-contact">        
@@ -188,6 +210,7 @@
 <!--    Карта    -->
         <section class="card-place">
           <img class="card-marker" src="img/pin.png" width="218" height="142" alt="Маркер">
+          <div id="yandex-map"></div>
           <div class="card-contacts">
             <h3>Адрес главного офиса и офлайн магазина:</h3>
             <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -229,39 +252,20 @@
     </footer>
     </div>
     
-    
     <div class="modal-content modal-link">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <span class="modal-title">Мы обязательно вам ответим!</span>
+      <span class="link-title">Мы обязательно вам ответим!</span>
       <form class="link" action="http://example.ru/" method="post">
         <input type="text" name="user-name" placeholder="Как вас зовут?">
         <input type="email" name="email" placeholder="Ваша почта для ответа?">
-        <textarea name="message" rows="3" placeholder="Напишите что-нибудь..."></textarea>
+        <textarea name="message" rows="5" placeholder="Напишите что-нибудь..."></textarea>
         <button class="mini-btn">Отправить</button>
       </form>
     </div>
-    <div class="modal-content modal-basket-full">
-      <div class="product-table">
-        <div class="table-row">
-          <div class="table-cell cell-delete"></div>
-          <div class="table-cell cell-icon"></div>
-          <div class="table-cell cell-name"></div>
-          <div class="table-cell cell-amount"></div>
-          <div class="table-cell cell-price"></div>
-        </div>
-        <div class="table-row">
-          <div class="table-cell cell-delete"></div>
-          <div class="table-cell cell-icon"></div>
-          <div class="table-cell cell-name"></div>
-          <div class="table-cell cell-amount"></div>
-          <div class="table-cell cell-price"></div>
-        </div>
-        <span class="summ">Итого 750 руб.</span>
-        <a class="mini-btn" href="#">Оформить заказ</a>
-      </div>
-
-    </div>
+    
     <div class="modal-overlay"></div>
+    
     <script src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WZdypHxndf0CKhN1VXlvMyyc6zbWlDOZ&amp;width=900&amp;height=430&amp;id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
 </html>
