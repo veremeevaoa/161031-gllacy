@@ -1,5 +1,5 @@
-/* Почему не получается подключить шрифты из папки? Из гугла тоже то ли подключаются, то ли отбражаются неправильно. Что не так?
-@font-face {
+/*
+ @font-face {
   font-family: "Roboto";
   src: local("Roboto");
   src: url("../fonts/roboto.woff2") format("woff2");
@@ -42,6 +42,7 @@
   font-style: normal;
 }
 */
+
 /*Содержание:
 Шапка - 120
   Логотип
@@ -82,7 +83,7 @@ body {
 }
 .block-row {
   margin: 0 10px;
-  padding: 0 0 39px;
+  padding: 0 0 40px;
   font-size: 0;
 }
 .block-row .col {
@@ -284,7 +285,7 @@ header .box-center::after {
 .header .user {
   float: right;
   width: 300px;
-  margin-top: 12px;
+  margin-top: 13px;
   text-align: right;
 /*  padding-left: 37px;*/
   background: #eeeeee;
@@ -298,6 +299,7 @@ header .box-center::after {
   padding-bottom: 5px;
   background: #cccccc;
   vertical-align: bottom;
+  text-align: right;
 }
 .user-search>a,
 .user-login>a,
@@ -334,7 +336,7 @@ header .box-center::after {
   width: 24px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -210px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -210px -4px;
 }
 .user .user-btn-basket {
   position: relative;
@@ -348,7 +350,7 @@ header .box-center::after {
   width: 22px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -5px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -5px -3px;
 }
 .user a[class^="user-btn"]:hover {
   color: #000000;
@@ -364,7 +366,7 @@ header .box-center::after {
   width: 24px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -240px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -240px -4px;
 }
 .user .user-btn-basket:hover::before {
   position: absolute;
@@ -373,7 +375,7 @@ header .box-center::after {
   width: 22px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -61px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -61px -3px;
 }
 .header .full-basket {
   position: relative;
@@ -387,7 +389,7 @@ header .box-center::after {
   width: 15px;
   height: 10px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -36px -6px;
+  background: transparent url("../img/sprite.png") no-repeat -36px -4px;
   }
 .header .full-basket::after {
   position: absolute;
@@ -396,35 +398,36 @@ header .box-center::after {
   width: 22px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -61px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -61px -3px;
 }
 /*Блок телефон-часы работы*/
 .header-contact {
   position: absolute;
-  top: 70px;
+  top: 71px;
   right: 19px;
   z-index: 5;
-  width: 172px;
+  width: 175px;
   text-align: right;
 }
 .header-contact .working-hour {
   margin-right: -2px;
-  font-family: "Roboto Bold", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .header-contact .tel {
-  font-family: "Roboto Bold", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.5px;
   word-spacing: -1px;
 }
 main .box-center {
   position: relative;/*Позиционирование задано только ради                           величины z-index*/
   z-index: 0;
+  padding-top:1px;
   padding-bottom: 2px;
 }
 /*Главная - слайдер*/
@@ -554,7 +557,7 @@ p.slider-title {
   line-height: 41px;
 }
 .banners p {
-  margin: 15px 0 24px;
+  margin: 18px 0 24px;
 }
 .banners a {
   float: right;
@@ -562,11 +565,11 @@ p.slider-title {
 }
 .mini-btn {
   height: 45px;
-  padding: 10px 24px;
+  padding: 10px 19px;
   font-family: "Roboto Bold", "Arial", serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   color: #ffffff;
   background: linear-gradient(#f16743,#c83725);
   border-radius: 22px;
@@ -614,9 +617,10 @@ p.slider-title {
   text-align: center;
 }
 .catalog-item .card-title {
+  padding-bottom: 0;
   font-family: "Roboto Medium", "Arial", serif;
   font-size: 16px;
-  line-height: 18px;  
+  line-height: 22px;  
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -645,23 +649,25 @@ p.slider-title {
 /*Главная - О компании*/
 .about-block {
   min-height: 372px;
-  padding: 24px 20px 0;
+  padding: 25px 20px 0;
   font-size: 0;
   background: transparent url(../img/waffle-bg.png) no-repeat;
   color: #000000;
 }
 h2.about-title {
-  font-family: "Roboto Medium", "Arial", serif;
+/*  padding-bottom: 3px;*/
+  font-family: "Roboto", "Arial", serif;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
+  white-space: pre-wrap;
 }
 .about-block p {
   position: relative;
   display: inline-block;
   width: 342px;
-  margin: 21px 0 0 56px;
+  margin: 22px 0 0 56px;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
@@ -689,14 +695,14 @@ h2.about-title {
   background-position: -152px -5px;
 }
 .about-block .leaf::before {
-  background-position: -377px -3px;
+  background-position: -377px -5px;
 }
 .about-block .term::before {
-  background-position: -679px -3px;
+  background-position: -680px -5px;
 }
 /*Главная - блог и подписка*/
 .block-row:last-of-type {
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 .blog-news p,
 .mailing p {
@@ -749,6 +755,7 @@ h2.about-title {
   margin-bottom: 15px; 
 }
 .mailing form {
+  font-family: "Roboto", "Arial", serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -776,7 +783,7 @@ h2.about-title {
 .card-place {
   position: relative;
   min-height: 430px;
-  background: #849d8f url("../img/card.png") no-repeat;
+  background: transparent url("../img/card.png") no-repeat;
 }
 .card-place .card-contacts {
   position: absolute;
@@ -785,6 +792,7 @@ h2.about-title {
   width: 302px;
   height: 305px;
   padding: 20px 25px;
+  font-family: "Roboto", "Arial", serif;
   font-size: 18px;
   line-height: 24px;
   color: #323232;
@@ -811,11 +819,11 @@ h2.about-title {
 .card-contacts span {
   margin-top: 3px;
 }
-.card-contacts a {
+.card-contacts .card-btn {
   display: block;
   height: 46px;
   margin-top: 25px;
-  padding: 10px 30px;
+  padding: 10px 22px;
 }
 .card-place .card-marker {
   position: absolute;
@@ -826,7 +834,7 @@ h2.about-title {
 /*Каталог - основная часть*/
 
 main .catalog-center {
-  padding-top: 6px;
+  padding-top: 7px;
   padding-bottom: 1px;
 }
 /*Каталог - Хлебные крошки*/
@@ -1021,7 +1029,7 @@ main .catalog-center {
   display: inline-block;
   margin-right: 9px;
   margin-left: 5px;
-  padding-left: 31px;
+  padding-left: 30px;
   cursor: pointer;
 }
 .fatness label:last-of-type,
@@ -1603,11 +1611,13 @@ footer .copyright {
 /*Окно обратной связи*/
 .modal-link {
   position: absolute;
-  left: 0;
+  top:51%;
+  left: 32%;
 /*  display: block;*/
   width: 478px;
   min-height: 443px;
   padding: 18px 25px 27px 24px;
+  z-index: 100;
   text-align: left;
   border-radius: 10px;
 }
@@ -1674,10 +1684,12 @@ footer .copyright {
   left: 0;
   z-index: 50;
   display: none;
+/*  display: block;*/
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 
 /*
 Спрайты
