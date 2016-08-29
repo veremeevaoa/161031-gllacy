@@ -938,6 +938,7 @@ main .catalog-center {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.2);
   vertical-align: middle;
+  cursor: pointer;
 }
 .filters .select-container::after {
   position: absolute;
@@ -949,7 +950,6 @@ main .catalog-center {
   content: "";
   color: #ffffff;
   background: transparent url("../img/sprite.png") no-repeat -490px -5px;
-  cursor: pointer;
 }
 .filters select {
   position: relative;
@@ -964,10 +964,14 @@ main .catalog-center {
 }
 .filters select:hover {
   color: #000000;
+  background: transparent;
+}
+.filters .select-container:hover {
+  color: #000000;
   background: #ffffff;
 }
 /*Стрелка для селекта - не работает*/
-.filters select:hover::before {
+.filters .select-container:hover::after {
   position: absolute;
   top: 16px;
   left: 171px;
@@ -975,7 +979,7 @@ main .catalog-center {
   width: 8px;
   height: 5px;
   content: "";
-  background: #cccccc url("../img/sprite.png") no-repeat -508px -5px;
+  background: transparent url("../img/sprite.png") no-repeat -508px -5px;
 }
 .filters select:focus {
   color: #000000;
