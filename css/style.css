@@ -86,16 +86,17 @@ body {
   width: 900px;
   margin: 0 auto;
   background: transparent;
-/*  opacity: 0.7;*/
 }
 .block-row {
-  margin: 0 10px;
+/*  margin: 0 10px;*/
+  margin: 0 1.11%;
   padding: 0 0 40px;
   font-size: 0;
 }
 .block-row .col {
   display: inline-block;
-  margin: 0 10px;
+/*  margin: 0 10px;*/
+  margin: 0 1.11%;
   vertical-align: top;
 }
 .col-1 {
@@ -130,9 +131,9 @@ a::after {
 header .box-center {
   position: relative;
   /* Позиционирование задано только ради величины z-index (отображение выпадающего меню) и блока Часы работы/телефон */
-  width: 900px;
   min-height: 75px;
   padding: 10px 20px 0;
+/*  padding: 10px 2.22% 0;*/
   z-index: 1;
 }
 header .box-center::after {
@@ -140,23 +141,27 @@ header .box-center::after {
   display: table;
   clear: both;
 }
-.header div,
+.header div.logo,
 .header nav {
   float: left;
 }
 .header .logo {
   width: 154px;
+/*  width: 17.11%;*/
   margin-left: -5px;
+/*  margin-left: -0.556%;*/
   font-size: 0;
 }
 .logo a {
   display: block;
   width: 154px;
+/*  width: 17.11%;*/
   text-decoration: none;
 }
 .main-menu {
   margin-top: 12px;
   margin-left: 30px;
+/*  margin-left: 3.33%;*/
 }
 .menu-list>li>a {
   display: block;
@@ -174,6 +179,7 @@ header .box-center::after {
 }
 .header .menu-list {
   width: 365px;
+/*  width: 40.56%;*/
   list-style: none;
 }
 .menu-list>li {
@@ -294,8 +300,6 @@ header .box-center::after {
   width: 300px;
   margin-top: 13px;
   text-align: right;
-/*  padding-left: 37px;*/
-  background: #eeeeee;
 }
 .user .user-search,
 .user .user-login,
@@ -304,7 +308,6 @@ header .box-center::after {
   display: inline-block;
   margin-left: 6px;
   padding-bottom: 5px;
-  background: #cccccc;
   vertical-align: bottom;
   text-align: right;
 }
@@ -600,7 +603,7 @@ p.slider-title {
   padding-top: 66px;
   font-size: 16px;
   line-height: 22px;
-  z-index: 2;
+  z-index: 1;
 }
 .catalog-hit-mark {
   position: absolute;
@@ -608,7 +611,7 @@ p.slider-title {
   left: 0;
   width: 61px;
   height: 61px;
-  z-index: 15;
+  z-index: 5;
 }
 .catalog-item .catalog-price {
   position: relative;
@@ -619,7 +622,7 @@ p.slider-title {
   text-align: left;
   word-spacing: -7px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-  z-index: 15;
+  z-index: 5;
 }
 .catalog-item .units {
   font-size: 30px;
@@ -629,7 +632,7 @@ p.slider-title {
 }
 .catalog-item .catalog-title {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: block;
   width: 192px;
   margin-top: 10px;
@@ -959,12 +962,12 @@ main .catalog-center {
   outline: none;
   color: #ffffff;
 }
-.filters select:focus {
+.filters select:hover {
   color: #000000;
   background: #ffffff;
 }
-/*Стрелка для селекта в фокусе - не работает*/
-.filters select:focus::before {
+/*Стрелка для селекта - не работает*/
+.filters select:hover::before {
   position: absolute;
   top: 16px;
   left: 171px;
@@ -973,6 +976,10 @@ main .catalog-center {
   height: 5px;
   content: "";
   background: #cccccc url("../img/sprite.png") no-repeat -508px -5px;
+}
+.filters select:focus {
+  color: #000000;
+  background: #ffffff;
 }
 .filters form>label,
 .filters .price-controls{
@@ -1154,13 +1161,13 @@ input[type=checkbox]:checked + label:active::before {
 .catalog .catalog-item {
   position: relative;
   margin-bottom: 38px;
-  z-index: 1;
+/*  z-index: 1;*/
 }
 .catalog p.catalog-price {
   position: relative;
   margin-top: 72px;
   margin-bottom: 15px;
-  z-index: 15;
+  z-index: 5;
 }
 .catalog .catalog-title {
   position: relative;
@@ -1168,7 +1175,7 @@ input[type=checkbox]:checked + label:active::before {
   margin-top: 0px;
   padding-top: 9px;
   padding-left: 7px;
-  z-index: 1;
+  z-index: 5;
 }
 .item5 {
   background: transparent url("../img/catalog-card5.png") no-repeat 50% 0;
@@ -1201,7 +1208,7 @@ input[type=checkbox]:checked + label:active::before {
   left: -10px;
   width: 220px;
   height: 362px;
-  z-index: 14;
+  z-index: 4;
   padding: 9px 10px;
   background-color: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
@@ -1217,7 +1224,7 @@ input[type=checkbox]:checked + label:active::before {
   margin-left: 3px;
   padding: 13px;
   padding-top: 11px;
-  z-index: 15;
+  z-index: 6;
   text-align: center;
 }
 .catalog-item .mask1 {
@@ -1255,6 +1262,9 @@ input[type=checkbox]:checked + label:active::before {
 }
 .catalog-item .mask12 {
   background-image: url("../img/catalog-card12.png");
+}
+.catalog-item:hover {
+  z-index: 2;
 }
 .catalog-item:hover .mask {
   display: block;
@@ -1355,7 +1365,7 @@ footer p {
 }
 footer .social-btn {
   width: 230px;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-left: 3px;
 }
 footer .social {
