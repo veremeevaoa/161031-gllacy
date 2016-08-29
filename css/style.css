@@ -41,27 +41,34 @@
   font-weight: normal;
   font-style: normal;
 }
-*/
-
-/*Содержание:
-Шапка - 120
+Содержание:
+Шапка - 130
   Логотип
-  Главное меню
-  Выпадающее меню - 215
-  Блок пользователя - 280
-  Часы работы и телефон - 353
-Главная - 377
-  Слайдер - 340
-  Баннеры - 499
-  Хиты - 548
-  О компании - 607
-  Карта - 788
-Каталог - 800
-  Хлебные крошки - 808
-  Фильтры - 879
-  Карточки - 1112
-  Переключатель страниц - 1226
-Подвал - 1300
+  Главное меню - 159
+    Выпадающее меню - 228
+  Блок пользователя - 294
+  Часы работы и телефон - 412
+Главная - 436
+  Слайдер - 443
+  Баннеры - 549
+  Хиты - 597
+  О компании - 673
+  Блок и подписка - 726
+  Карта - 804
+Каталог - 859
+  Хлебные крошки - 866
+  Фильтры - 906
+  Карточки - 1156 (Маски - 1199)
+  Переключатель страниц - 1259
+Подвал - 1337
+  Соцблок - 1348
+  Меню - 1403
+Модальные окна - 1472
+  Окно поиска - 1504
+  Окно входа - 1517
+  Корзина - 1560
+  Форма обратной связи - 1656
+Спрайты - 1762
 */
 *{
   margin: 0;
@@ -593,7 +600,7 @@ p.slider-title {
   padding-top: 66px;
   font-size: 16px;
   line-height: 22px;
-  z-index: 1;
+  z-index: 2;
 }
 .catalog-hit-mark {
   position: absolute;
@@ -621,6 +628,8 @@ p.slider-title {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .catalog-item .catalog-title {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 192px;
   margin-top: 10px;
@@ -667,7 +676,6 @@ p.slider-title {
   color: #000000;
 }
 h2.about-title {
-/*  padding-bottom: 3px;*/
   font-family: "Roboto", "Arial", serif;
   font-size: 24px;
   line-height: 30px;
@@ -795,14 +803,15 @@ h2.about-title {
 .card-place {
   position: relative;
   min-height: 430px;
-  background: transparent url("../img/card.png") no-repeat;
+  background: transparent url("../img/card.png") no-repeat center;
 }
 .card-place .card-contacts {
   position: absolute;
   bottom: 62px;
-  right: 20px;
+  left: 50%;
   width: 302px;
   height: 305px;
+  margin-left: 128px;
   padding: 20px 25px;
   font-family: "Roboto", "Arial", serif;
   font-size: 18px;
@@ -840,9 +849,11 @@ h2.about-title {
 .card-place .card-marker {
   position: absolute;
   bottom: 149px;
-  left: 186px;
+  right: 50%;
+  width: 218px;
+  height: 142px;
+  margin-right: 46px;
 }
-
 /*Каталог - основная часть*/
 
 main .catalog-center {
@@ -935,6 +946,7 @@ main .catalog-center {
   content: "";
   color: #ffffff;
   background: transparent url("../img/sprite.png") no-repeat -490px -5px;
+  cursor: pointer;
 }
 .filters select {
   position: relative;
@@ -950,6 +962,17 @@ main .catalog-center {
 .filters select:focus {
   color: #000000;
   background: #ffffff;
+}
+/*Стрелка для селекта в фокусе - не работает*/
+.filters select:focus::before {
+  position: absolute;
+  top: 16px;
+  left: 171px;
+  display: block;
+  width: 8px;
+  height: 5px;
+  content: "";
+  background: #cccccc url("../img/sprite.png") no-repeat -508px -5px;
 }
 .filters form>label,
 .filters .price-controls{
@@ -1140,10 +1163,12 @@ input[type=checkbox]:checked + label:active::before {
   z-index: 15;
 }
 .catalog .catalog-title {
+  position: relative;
   width: 192px;
   margin-top: 0px;
   padding-top: 9px;
   padding-left: 7px;
+  z-index: 1;
 }
 .item5 {
   background: transparent url("../img/catalog-card5.png") no-repeat 50% 0;
@@ -1185,12 +1210,14 @@ input[type=checkbox]:checked + label:active::before {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .mask .mini-btn {
+  position: relative;
   display: block;
   width: 194px;
   margin-top: 290px;
   margin-left: 3px;
   padding: 13px;
   padding-top: 11px;
+  z-index: 15;
   text-align: center;
 }
 .catalog-item .mask1 {
@@ -1855,5 +1882,4 @@ footer .copyright {
     height: 31px;
     background-position: -780px -5px;
 }
-
 */
