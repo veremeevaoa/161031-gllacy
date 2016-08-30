@@ -38,7 +38,10 @@
             <a class="user-btn-search" href="#">Поиск</a>
             <div class="modal-content modal-search">
               <form class="search" action="http://example.ru/" method="get">
-                <input type="search" placeholder="Что ищем?">
+                <input class="modal-field" type="search" placeholder="Что ищем?">
+                <div class="label-box">
+                  <label class="modal-label">Что ищем?</label>
+                </div>
               </form>
             </div>
           </div>
@@ -46,8 +49,14 @@
             <a class="user-btn-login" href="#">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input type="email" placeholder="Электронная почта">
-                <input type="password" placeholder="Пароль">
+                <input class="modal-field" type="email" placeholder="Электронная почта">
+                <div class="label-box">
+                  <label class="modal-label">Электронная почта</label>
+                </div>
+                <input class="modal-field" type="password" placeholder="Пароль">
+                <div class="label-box">
+                  <label class="modal-label">Пароль</label>
+                </div>
                 <button class="mini-btn">Войти</button>
               </form>
               <div class="helper-wrapper">

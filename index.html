@@ -40,7 +40,10 @@
             <a class="user-btn-search" href="#">Поиск</a>
             <div class="modal-content modal-search">
               <form class="search" action="http://example.ru/" method="get">
-                <input type="search" placeholder="Что ищем?">
+                <input class="modal-field" type="search">
+                <div class="label-box">
+                  <label class="modal-label">Что ищем?</label>
+                </div>
               </form>
             </div>
           </div>
@@ -48,8 +51,14 @@
             <a class="user-btn-login" href="#">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input type="email" placeholder="Электронная почта">
-                <input type="password" placeholder="Пароль">
+                <input class="modal-field" type="email">
+                <div class="label-box">
+                  <label class="modal-label">Электронная почта</label>
+                </div>
+                <input class="modal-field" type="password" id="password">
+                <div class="label-box">
+                  <label class="modal-label" for="password">Пароль</label>
+                </div>
                 <button class="mini-btn">Войти</button>
               </form>
               <div class="helper-wrapper">
@@ -252,9 +261,18 @@
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <span class="link-title">Мы обязательно вам ответим!</span>
       <form class="link" action="http://example.ru/" method="post">
-        <input type="text" name="user-name" placeholder="Как вас зовут?">
-        <input type="email" name="email" placeholder="Ваша почта для ответа?">
-        <textarea name="message" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="modal-field" type="text" name="user-name">
+        <div class="label-box">
+          <label class="modal-label">Как вас зовут?</label>
+        </div>
+        <input class="modal-field" type="email" name="email">
+        <div class="label-box">
+          <label class="modal-label">Ваша почта для ответа?</label>
+        </div>
+        <textarea class="modal-field" name="message" rows="5"></textarea>
+        <div class="label-box">
+          <label class="modal-label">Напишите что-нибудь...</label>
+        </div>
         <button class="mini-btn" type="submit">Отправить</button>
       </form>
     </div>
