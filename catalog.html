@@ -35,27 +35,27 @@
         </nav>
         <div class="user">
           <div class="user-search">
-            <a class="user-btn-search" href="#">Поиск</a>
+            <a class="user-btn-search" href="search.html">Поиск</a>
             <div class="modal-content modal-search">
               <form class="search" action="http://example.ru/" method="get">
-                <input class="modal-field" type="search" placeholder="Что ищем?">
+                <input class="modal-field" type="search" id="search-field" required>
                 <div class="label-box">
-                  <label class="modal-label">Что ищем?</label>
+                  <label class="modal-label" for="search-field">Что ищем?</label>
                 </div>
               </form>
             </div>
           </div>
           <div class="user-login">
-            <a class="user-btn-login" href="#">Вход</a>
+            <a class="user-btn-login" href="login.html">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input class="modal-field" type="email" placeholder="Электронная почта">
+                <input class="modal-field" type="email" id="email-field" required>
                 <div class="label-box">
-                  <label class="modal-label">Электронная почта</label>
+                  <label class="modal-label" for="email-field">Электронная почта</label>
                 </div>
-                <input class="modal-field" type="password" placeholder="Пароль">
+                <input class="modal-field" type="password" id="password-field" required>
                 <div class="label-box">
-                  <label class="modal-label">Пароль</label>
+                  <label class="modal-label" for="password-field">Пароль</label>
                 </div>
                 <button class="mini-btn">Войти</button>
               </form>
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="user-basket full">
-            <a class="user-btn-basket full-basket" href="#">2 товара</a>
+            <a class="user-btn-basket full-basket" href="basket.html">2 товара</a>
             <div class="modal-content modal-basket-full">
               <div class="product-table">
                 <div class="table-row">
@@ -87,7 +87,7 @@
                 </div>
               </div>
               <span class="summ">Итого 750 руб.</span>
-              <a class="mini-btn" href="#">Оформить заказ</a>  
+              <a class="mini-btn" href="basket.html">Оформить заказ</a>  
             </div>
           </div>
         </div>

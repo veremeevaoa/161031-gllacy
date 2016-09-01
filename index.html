@@ -37,27 +37,27 @@
         </nav>
         <div class="user">
           <div class="user-search">
-            <a class="user-btn-search" href="#">Поиск</a>
+            <a class="user-btn-search" href="search.html">Поиск</a>
             <div class="modal-content modal-search">
               <form class="search" action="http://example.ru/" method="get">
-                <input class="modal-field" type="search">
+                <input class="modal-field" type="search" id="search-field" required>
                 <div class="label-box">
-                  <label class="modal-label">Что ищем?</label>
+                  <label class="modal-label" for="search-field">Что ищем?</label>
                 </div>
               </form>
             </div>
           </div>
           <div class="user-login">
-            <a class="user-btn-login" href="#">Вход</a>
+            <a class="user-btn-login" href="login.html">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input class="modal-field" type="email">
+                <input class="modal-field" type="email" id="email-field" required>
                 <div class="label-box">
-                  <label class="modal-label">Электронная почта</label>
+                  <label class="modal-label" for="email-field">Электронная почта</label>
                 </div>
-                <input class="modal-field" type="password" id="password">
+                <input class="modal-field" type="password" id="password-field" required>
                 <div class="label-box">
-                  <label class="modal-label" for="password">Пароль</label>
+                  <label class="modal-label" for="password-field">Пароль</label>
                 </div>
                 <button class="mini-btn">Войти</button>
               </form>
@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="user-basket">
-            <a class="user-btn-basket" href="#">Пусто</a>
+            <a class="user-btn-basket" href="basket.html">Пусто</a>
             <div class="modal-content modal-basket-full">
               <div class="product-table">
                 <div class="table-row">
@@ -88,7 +88,7 @@
                   <div class="table-cell cell-price">450</div>
                 </div>
                 <span class="summ">Итого 750 руб.</span>
-                <a class="mini-btn" href="#">Оформить заказ</a>
+                <a class="mini-btn" href="basket.html">Оформить заказ</a>
               </div>
             </div>
           </div>
@@ -261,18 +261,24 @@
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <span class="link-title">Мы обязательно вам ответим!</span>
       <form class="link" action="http://example.ru/" method="post">
-        <input class="modal-field" type="text" name="user-name">
+        <input class="modal-field" type="text" name="user-name" id="user-name-field" placeholder="Как вас зовут?">
+<!--
         <div class="label-box">
-          <label class="modal-label">Как вас зовут?</label>
+          <label class="modal-label" for="user-name-field">Как вас зовут?</label>
         </div>
-        <input class="modal-field" type="email" name="email">
+-->
+        <input class="modal-field" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
+<!--
         <div class="label-box">
-          <label class="modal-label">Ваша почта для ответа?</label>
+          <label class="modal-label" for="email-field">Ваша почта для ответа?</label>
         </div>
-        <textarea class="modal-field" name="message" rows="5"></textarea>
+-->
+        <textarea class="modal-field" name="message" rows="5" id="message-field" placeholder="Напишите что-нибудь..."></textarea>
+<!--
         <div class="label-box">
-          <label class="modal-label">Напишите что-нибудь...</label>
+          <label class="modal-label" for="message-field">Напишите что-нибудь...</label>
         </div>
+-->
         <button class="mini-btn" type="submit">Отправить</button>
       </form>
     </div>
