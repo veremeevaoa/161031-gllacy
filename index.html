@@ -6,8 +6,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet">
+<!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=cyrillic,latin' rel='stylesheet' type='text/css'>-->
+    <link href=".min.css/style-min.css" rel="stylesheet">
   </head>  
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -51,9 +51,9 @@
             <a class="user-btn-login" href="login.html">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input class="modal-field" type="email" id="email-field" required>
+                <input class="modal-field" type="text" id="email-f" required>
                 <div class="label-box">
-                  <label class="modal-label" for="email-field">Электронная почта</label>
+                  <label class="modal-label" for="email-f">Электронная почта</label>
                 </div>
                 <input class="modal-field" type="password" id="password-field" required>
                 <div class="label-box">
@@ -204,7 +204,7 @@
           </section>
           <section class="mailing col col-2">
             <div class="basic-background">
-              <p>Подпишитесь на нашу сладкую рассылку и будете    всегда в курсе всего самого вкусного, что у нас     происходит. Обещаем не спамить и не слать всякой     не нужной ерунды. Честно =) </p>
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
               <form class="subscription" action="http://example.ru/" method="post">
                 <input type="email" name="email"                    placeholder="Электронная почта">
                 <button class="mini-btn" type="submit" value="Отправить">Отправить</button>
@@ -215,7 +215,7 @@
       </div>
 <!--    Карта    -->
         <section class="card-place">
-          <img class="card-marker" src="img/pin.png" width="218" height="142" alt="Маркер">
+<!--          <img class="card-marker" src="img/pin.png" width="218" height="142" alt="Маркер">-->
           <div class="yandex-map" id="yandex-map"></div>
           <div class="card-contacts">
             <h3>Адрес главного офиса и офлайн магазина:</h3>
@@ -224,13 +224,13 @@
             <p class="tel">8 812 450-25-25<br>
               <span>(с 10 до 20 ежедневно)</span>
             </p>
-            <a class="card-btn mini-btn" href="#">Форма обратной связи</a>
+            <a class="card-btn mini-btn" href="wright-us.html">Форма обратной связи</a>
           </div>
         </section>
     </main>
 <!--  Подвал  -->
     <footer>
-      <div class="box-center">
+      <div class="box-center clearfix ">
         <div class="social-btn">
           <a class="social social-tw" href="#">Твиттер</a>
           <a class="social social-inst" href="#">Инстаграм</a>
@@ -283,7 +283,7 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
-    <script src="js/script.js"></script>
+    <script src=".min.js/js-min.js"></script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_zTwKnUOYvzkFNjEjTNcR_Cw6zOc-7oM&amp;width=100%&amp;height=430&amp;id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
 </html>

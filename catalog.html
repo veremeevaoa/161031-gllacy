@@ -6,8 +6,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet">
+<!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=cyrillic,latin' rel='stylesheet' type='text/css'>-->
+    <link href=".min.css/style-min.css" rel="stylesheet">
   </head>  
   <body>
 <!-- Хедер  -->
@@ -49,9 +49,9 @@
             <a class="user-btn-login" href="login.html">Вход</a>
             <div class="modal-content modal-enter">
               <form class="enter" action="http://example.ru/" method="get">
-                <input class="modal-field" type="email" id="email-field" required>
+                <input class="modal-field" type="text" id="email-f" required>
                 <div class="label-box">
-                  <label class="modal-label" for="email-field">Электронная почта</label>
+                  <label class="modal-label" for="email-f">Электронная почта</label>
                 </div>
                 <input class="modal-field" type="password" id="password-field" required>
                 <div class="label-box">
@@ -121,7 +121,7 @@
                 Цена: <input class="min-price" type="text" value="100"><span>руб. - </span>
                 <input class="max-price" type="text" value="500"> руб.
             </div>
-            <label class="label-fatness">Жирность:</label>
+            <label class="label-fatness">Жирность:</label><br>
             <div class="select-container">
               <select name="sort" id="sort">
                 <option class="sort-item" value="popular" selected>по популярности</option>
@@ -307,6 +307,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src=".min.js/js-min.js"></script>
   </body>
 </html>
