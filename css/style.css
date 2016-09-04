@@ -888,7 +888,8 @@ h2.about-title {
   height: 46px;
   margin-top: 25px;
   padding: 10px 22px;
-  padding-left: 34px;
+  text-align: center;
+/*  padding-left: 30px;*/
 }
 /*
 .card-place .card-marker {
