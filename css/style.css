@@ -1,44 +1,32 @@
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto");
-  src: url("../fonts/roboto.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto");
-  src: url("../fonts/roboto.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: "Roboto Medium";
-  src: local("Roboto Medium");
-  src: url("../fonts/robotomedium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto");
-  src: url("../fonts/roboto.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto");
-  src: url("../fonts/roboto.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto Medium";
-  src: local("Roboto Medium");
-  src: url("../fonts/robotomedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /*
 Содержание:
@@ -76,9 +64,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", "Arial", serif;
+  font-family: "Roboto Regular", "Arial", serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   background: #849d8f;
   color: #ffffff;
 }
@@ -91,7 +80,7 @@ body {
 .block-row {
 /*  margin: 0 10px;*/
   margin: 0 1.11%;
-  padding: 0 0 40px;
+  padding: 0 0 39px;
   font-size: 0;
 }
 .block-row .col {
@@ -110,9 +99,9 @@ body {
   width: 97.74%;
 }
 a {
-  font-family: "Roboto", "Arial", serif;
+  font-family: "Roboto Medium", "Arial", serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -159,7 +148,7 @@ header .box-center::after {
   text-decoration: none;
 }
 .header .main-menu {
-   width: 386px;
+   width: 398px;
 /*  width: 46.02%;*/
   margin-top: 12px;
   margin-left: 5px;
@@ -172,8 +161,6 @@ header .box-center::after {
 }
 .menu-list>li {
   display: inline-block;
-  margin-right: 2px;
-/*  margin-right: 0.548%;*/
   padding-bottom: 5px;
   vertical-align: middle;
   white-space: nowrap;
@@ -184,10 +171,14 @@ header .box-center::after {
 }
 .menu-list>li>a {
   display: block;
-  margin-right: -4px;
+  margin-right: -2px;
   padding: 8px 13px;
   color: #ffffff;
   text-decoration: none;
+  font-family: "Roboto", "Arial", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
 }
 .menu-list>li>a::after {
   display: block;
@@ -256,7 +247,7 @@ header .box-center::after {
   text-decoration: none;
 }
 .menu-catalog a.new {
-  font-family:  "Roboto bold", "Arial", serif;
+  font-family:  "Roboto", "Arial", serif;
   font-weight: 700;
 }
 .menu-catalog li:first-of-type::after {
@@ -323,10 +314,10 @@ header .box-center::after {
   display: inline-block;
 /*  height: 32px;*/
   padding: 9px 0;
-  font-family: "Roboto Medium", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 500;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   text-decoration: none;
@@ -426,7 +417,7 @@ header .box-center::after {
   text-align: right;
 }
 .header-contact .working-hour {
-  margin-right: -2px;
+  margin-right: -3px;
   font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 18px;
@@ -436,9 +427,11 @@ header .box-center::after {
   font-family: "Roboto", "Arial", serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 700;
+/*
   letter-spacing: 0.5px;
   word-spacing: -1px;
+*/
 }
 main .box-center {
   position: relative;/*Позиционирование задано только ради величины z-index*/
@@ -496,31 +489,29 @@ body> input[type=radio] {
 }
 p.slider-title {
   display: block;
-  width: 690px;
+  width: 700px;
 /*  margin: 308px 0 50px 98px;*/
-  margin: 307px auto 50px;
-/*  padding-left: 10px;*/
+  margin: 308px auto 37px;
   font-family: "Roboto", "Arial", serif;
   font-size: 60px;
   line-height: 60px;  
   font-weight: 700;
-/*
-  word-spacing: -5px;
-  letter-spacing: -0.2px;
-*/
   text-align: center;
   vertical-align: bottom;
 }
 .slider-box a {
   width: 300px;
   height: 30px;
-  padding: 10px 40px 15px;
+  padding: 10px 38px 15px;
   border-radius: 30px;
   text-align: center;
+  font-family: "Roboto", "Arial", serif;
+  font-size: 32px;
+  line-height: 44px;  
+  font-weight: 700;
+  text-decoration: none;
   background: -webkit-linear-gradient(#f26843,#e74b36);
   background: linear-gradient(#f26843,#e74b36);
-  font-size: 32px;
-  text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
@@ -570,8 +561,7 @@ p.slider-title {
 .banner-left,
 .banner-right {
   min-height: 229px;
-/*  padding: 15px 19px;*/
-  padding: 15px 2.26%;
+  padding: 15px 18px;
   font-family: "Roboto", "Arial", serif;
   font-size: 18px;
   font-weight: 700;
@@ -585,8 +575,10 @@ p.slider-title {
   background: transparent url(../img/chocolate-bg1200.jpg) no-repeat;
 }
 .banners span {
+  font-family: inherit;
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
 }
 .banners p {
   margin: 18px 0 24px;
@@ -597,8 +589,8 @@ p.slider-title {
 }
 .mini-btn {
   height: 45px;
-  padding: 10px 19px;
-  font-family: "Roboto", "Arial", serif;
+  padding: 10px 22px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -706,7 +698,7 @@ p.slider-title {
 .about-block {
 /*  min-height: 372px;*/
 /*  padding: 25px 20px 0;*/
-  padding: 25px 2.33% 25px;
+  padding: 25px 2.33%;
   font-size: 0;
   background: transparent url(../img/waffle-pattern.jpg);
   color: #000000;
@@ -724,12 +716,13 @@ h2.about-title {
   position: relative;
   display: inline-block;
 /*  width: 342px;*/
-  width: 41.4%;
-/*  margin: 22px 0 0 56px;*/
-  margin: 22px 0 0 6.7%;
+  width: 41.2%;
+  margin: 21px 0 0 56px;
+/*  margin: 22px 0 0 6.7%;*/
   padding: 0;
+  font-family: "Roboto", "Arial", serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 23px;
   color: #323232;
   font-weight: 400;
   vertical-align: top;
@@ -743,35 +736,36 @@ h2.about-title {
 .about-block p::before {
   position: absolute;
   top: -13px;
-  left: -56px;
+  left: -58px;
   content:"";
   width: 49px;
   height: 49px;
   background: transparent url("../img/sprite.png") no-repeat;
 }
 .about-block .ice-cream::before {
-  background-position: -620px -5px;
+  background-position: -619px -5px;
 }
 .about-block .cow::before {
   background-position: -152px -5px;
 }
 .about-block .leaf::before {
-  background-position: -376px -5px;
+  background-position: -375px -5px;
 }
 .about-block .term::before {
-  background-position: -679px -5px;
+  background-position: -678px -5px;
 }
 /*Главная - блог и подписка*/
 .block-row:last-of-type {
-  padding-bottom: 39px;
+  padding-bottom: 38px;
 }
 .blog-news p,
 .mailing p {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  font-family: "Roboto", "Arial", serif;
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
-  font-weight: 500;
+  font-weight: 400;
 }
 .blog-news {
   min-height: 220px;
@@ -783,6 +777,7 @@ h2.about-title {
 .blog-news a {
   display: inline-block;
   width: 285px;
+  font-family: "Roboto", "Arial", serif;
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
@@ -791,7 +786,7 @@ h2.about-title {
   text-decoration: underline;
 }
 .blog-news span {
-  background: rgba(256,256,256,0.4);
+  background: rgba(256,256,256,0.6);
 }
 .blog-news a:hover {
   color: #e84d37;
@@ -801,7 +796,7 @@ h2.about-title {
 }
 .mailing {
   min-height: 220px;
-  background: #849d8f url("../img/post-fon.jpg");
+  background: transparent url("../img/post-fon.jpg");
   border-radius: 15px;
 }
 .mailing .basic-background {
@@ -812,7 +807,7 @@ h2.about-title {
   margin: 5px 1.25%;
   background-color: #f8f7f4;
 /*  padding: 15px 20px;*/
-  padding: 19px 4.77%;
+  padding: 18px 4.78%;
   border-radius: 10px;
 }
 .mailing p {
@@ -828,8 +823,8 @@ h2.about-title {
 .mailing input {
   display: inline-block;
 /*  width: 229px;*/
-  width: 61.9%;
-  margin-right: 8px;
+  width: 61.85%;
+  margin-right: 7px;
 /*  padding: 8px 15px;*/
   padding: 9px 3.76%;
   border-radius: 5px;
@@ -849,7 +844,7 @@ h2.about-title {
 /*Карта*/
 .card-place {
   position: relative;
-  min-height: 430px;
+  min-height: 428px;
   background: transparent url("../img/map1200.jpg") no-repeat center;
 }
 .card-place .card-contacts {
@@ -859,8 +854,8 @@ h2.about-title {
   width: 302px;
   height: 305px;
 /*  margin-left: 128px;*/
-  margin-left: 14.5%;
-  padding: 20px 25px;
+  margin-left: 14.3%;
+  padding: 18px 25px;
   font-family: "Roboto", "Arial", serif;
   font-size: 18px;
   line-height: 24px;
@@ -870,7 +865,7 @@ h2.about-title {
   border-radius: 15px;
 }
 .card-contacts p {
-  margin: 1px 0 18px;
+  margin: 1px 0 19px;
 }
 .card-contacts .tel {
   margin: 6px 0 18px;
@@ -946,7 +941,7 @@ main .catalog-center {
 .catalog-center h1 {
   margin-top: 2px;
   margin-left: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-family: "Roboto", "Arial", serif;
   font-size: 35px;
   line-height: 41px;  
@@ -964,9 +959,10 @@ main .catalog-center {
 .filters .range-controls {
   display: inline-block;
   vertical-align: middle;
-  font-family: "Roboto Medium", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   background: rgba(255, 255, 255, 0.2);
 }
 .filters .select-container,
@@ -1040,7 +1036,7 @@ main .catalog-center {
   display: inline-block;
   margin: 6px 17px 0;
   width: 170px;
-  font-family: "Roboto Medium", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1054,7 +1050,7 @@ main .catalog-center {
 .filters .max-price {
   display: inline-block;
   width: 25px;
-  font-family: "Roboto Medium", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1123,8 +1119,8 @@ main .catalog-center {
 .filler label {
   position: relative;
   display: inline-block;
-  margin-right: 9px;
-  margin-left: 5px;
+  margin-right: 10px;
+  margin-left: 4px;
   padding-left: 30px;
   cursor: pointer;
 }
@@ -1225,14 +1221,19 @@ input[type=checkbox]:checked + label:active::before {
 .catalog .catalog-item {
   position: relative;
   margin-bottom: 38px;
-/*  z-index: 1;*/
+  font-family: "Roboto", "Arial", serif;
+  font-size: 16px;
+  line-height: 22px;
   background-size: 100%;
 }
 .catalog p.catalog-price {
   position: relative;
-  margin-top: 72px;
+  margin-top: 70px;
   margin-bottom: 15px;
   z-index: 5;
+  font-family: "Roboto", "Arial", serif;
+  font-size: 45px;
+  font-weight: 700;
 }
 .catalog .catalog-title {
   position: relative;
@@ -1243,6 +1244,12 @@ input[type=checkbox]:checked + label:active::before {
 /*  padding-left: 7px;*/
   padding-left: 4.17%;
   z-index: 5;
+}
+.catalog-title a {
+  font-family: "Roboto", "Arial", serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 .item5 {
   background: transparent url("../img/catalog-card5.png") no-repeat 50% 0;
@@ -1290,12 +1297,9 @@ input[type=checkbox]:checked + label:active::before {
 .mask .mini-btn {
   position: relative;
   display: block;
-  width: 194px;
+  width: 200px;
   margin: 290px auto 8px;
-/*  margin-top: 290px;*/
-/*  margin-left: 3px;*/
-/*  margin-bottom: 8px;*/
-  padding: 13px;
+  padding: 12px;
   padding-top: 11px;
   z-index: 6;
   text-align: center;
@@ -1420,10 +1424,11 @@ input[type=checkbox]:checked + label:active::before {
 /*Подвал*/
 footer .box-center {
 /*  padding: 19px 20px 22px;*/
-  padding: 19px 2.22% 22px;
+  padding: 26px 2.22% 22px;
 }
 footer .box-center,
 footer a {
+  font-family: "Roboto", "Arial", serif;
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -1442,7 +1447,7 @@ footer p {
 footer .social-btn {
   float: left;
 /*  width: 230px;*/
-  padding-top: 10px;
+  padding-top: 13px;
   padding-left: 3px;
 }
 footer .social {
@@ -1536,15 +1541,16 @@ footer a.social-vk:active {
 .footer-logo {
   float: right;
   width: 190px;
-  margin-right: 0;
+/*  margin-right: 0;*/
+  margin-top: -6px;
   text-align: left;
 }
 footer .copyright {
   width: 190px;
   margin: 5px 0 0;
+  font-family: "Roboto", "Arial", serif;
   font-size: 12px;
   line-height: 16px;
-  font-family: "Roboto", "Arial", serif;
   color: #fefefe;
   font-weight: 400;
 }
@@ -1562,7 +1568,8 @@ footer .copyright {
   right: 0;
   display: none;
   z-index: 10;
-  padding: 20px 15px; 
+  padding: 20px 15px;
+  font-family: "Roboto", "Arial", serif;
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
