@@ -139,7 +139,7 @@ header .box-center::after {
   width: 154px;
 /*  width: 17.11%;*/
   font-size: 0;
-  margin-left: -5px;
+  margin-left: -0.556%;
 }
 .logo a {
   display: block;
@@ -581,6 +581,7 @@ p.slider-title {
   font-weight: 700;
 }
 .banners p {
+  min-height: 63px;
   margin: 18px 0 24px;
 }
 .banners a {
@@ -617,7 +618,7 @@ p.slider-title {
   position: relative;
   min-height: 276px;
   margin-top: 1px;
-  padding-top: 66px;
+/*  padding-top: 66px;*/
   font-size: 16px;
   line-height: 22px;
   z-index: 1;
@@ -631,9 +632,13 @@ p.slider-title {
   height: 61px;
   z-index: 5;
 }
+.catalog-item .catalog-card {
+  width: 100%;
+  height: 100%;
+}
 .catalog-item .catalog-price {
   position: relative;
-  margin-top: 74px;
+  margin-top: -62px;
   font-size: 45px;
   font-weight: 600;
   line-height: 45px;
@@ -654,7 +659,7 @@ p.slider-title {
   display: block;
 /*  width: 192px;*/
   width: 96%;
-  margin-top: 10px;
+  margin-top: 9px;
   padding-top: 12px;
 /*  padding-left: 8px;*/
   padding-left: 4.17%;
@@ -678,6 +683,7 @@ p.slider-title {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158, 0.3);
 }
+/*
 .catalog-hit1 {
   background: transparent url("../img/catalog-card1.png") no-repeat 50% 0;
   background-size: 100%;
@@ -694,11 +700,12 @@ p.slider-title {
   background: transparent url("../img/catalog-card4.png") no-repeat 50% 0;
   background-size: 100%;
 }
+*/
 /*Главная - О компании*/
 .about-block {
 /*  min-height: 372px;*/
-/*  padding: 25px 20px 0;*/
-  padding: 25px 2.33%;
+  padding: 25px 20px;
+/*  padding: 25px 2.33%;*/
   font-size: 0;
   background: transparent url(../img/waffle-pattern.jpg);
   color: #000000;
@@ -716,7 +723,7 @@ h2.about-title {
   position: relative;
   display: inline-block;
 /*  width: 342px;*/
-  width: 41.2%;
+  width: 41.5%;
   margin: 21px 0 0 56px;
 /*  margin: 22px 0 0 6.7%;*/
   padding: 0;
@@ -729,9 +736,9 @@ h2.about-title {
 }
 .about-block p:nth-of-type(2n+1) {
 /*  width: 343px;*/
-  width: 42%;
+  width: 42.2%;
 /*  margin-right: 22px;*/
-  margin-right: 2.8%;
+  margin-right: 2.6%;
 }
 .about-block p::before {
   position: absolute;
@@ -743,16 +750,16 @@ h2.about-title {
   background: transparent url("../img/sprite.png") no-repeat;
 }
 .about-block .ice-cream::before {
-  background-position: -619px -5px;
+  background-position: -619px -4px;
 }
 .about-block .cow::before {
-  background-position: -152px -5px;
+  background-position: -152px -4px;
 }
 .about-block .leaf::before {
-  background-position: -375px -5px;
+  background-position: -375px -4px;
 }
 .about-block .term::before {
-  background-position: -678px -5px;
+  background-position: -678px -4px;
 }
 /*Главная - блог и подписка*/
 .block-row:last-of-type {
@@ -769,8 +776,8 @@ h2.about-title {
 }
 .blog-news {
   min-height: 220px;
-/*  padding: 22px 20px 30px;*/
-  padding: 22px 2.35% 30px;
+  padding: 22px 20px 30px;
+/*  padding: 22px 2.35% 30px;*/
   background: transparent url("../img/strawberry-bg1200.jpg") no-repeat right;
   border-radius: 15px;
 }
@@ -806,11 +813,12 @@ h2.about-title {
 /*  margin: 5px;*/
   margin: 5px 1.25%;
   background-color: #f8f7f4;
-/*  padding: 15px 20px;*/
-  padding: 18px 4.78%;
+  padding: 18px 20px;
+/*  padding: 18px 4.78%;*/
   border-radius: 10px;
 }
 .mailing p {
+  min-height: 86px;
   margin-top: 13px;
   margin-bottom: 15px; 
 }
@@ -821,12 +829,11 @@ h2.about-title {
   font-weight: 400;
 }
 .mailing input {
-  display: inline-block;
 /*  width: 229px;*/
   width: 61.85%;
-  margin-right: 7px;
-/*  padding: 8px 15px;*/
-  padding: 9px 3.76%;
+  margin-right: 6px;
+  padding: 9px 15px;
+/*  padding: 9px 3.76%;*/
   border-radius: 5px;
   vertical-align: top;
   background-color: #ffffff;
@@ -835,9 +842,11 @@ h2.about-title {
   border: 1px solid #d3d3d2;
 }
 .mailing button {
+  float: right;
   display: inline-block;
   width: 129px;
   height: 44px;
+  margin-top: 0;
   outline: none;
   border: none;
 }
@@ -1229,7 +1238,7 @@ input[type=checkbox]:checked + label:active::before {
 }
 .catalog p.catalog-price {
   position: relative;
-  margin-top: 70px;
+  margin-top: -67px;
   margin-bottom: 15px;
   z-index: 5;
   font-family: "Roboto", "Arial", serif;
@@ -1252,6 +1261,7 @@ input[type=checkbox]:checked + label:active::before {
   line-height: 22px;
   font-weight: 500;
 }
+/*
 .item5 {
   background: transparent url("../img/catalog-card5.png") no-repeat 50% 0;
 }
@@ -1276,6 +1286,7 @@ input[type=checkbox]:checked + label:active::before {
 .item12 {
   background: transparent url("../img/catalog-card12.png") no-repeat 50% 0;
 }
+*/
 .catalog-item .mask {
   display: none;
   position: absolute;
@@ -1291,20 +1302,24 @@ input[type=checkbox]:checked + label:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-position: center 9px;
-  background-size: 90.91%;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.mask .catalog-card {
+  margin-bottom: 84px;
+  width: 100%;
 }
 .mask .mini-btn {
   position: relative;
   display: block;
   width: 200px;
-  margin: 290px auto 8px;
+  margin: 0px auto 8px;
   padding: 12px;
   padding-top: 11px;
   z-index: 6;
   text-align: center;
 }
+/*
 .catalog-item .mask1 {
   background-image: url("../img/catalog-card1.png");
 }
@@ -1341,6 +1356,7 @@ input[type=checkbox]:checked + label:active::before {
 .catalog-item .mask12 {
   background-image: url("../img/catalog-card12.png");
 }
+*/
 .catalog-item:hover {
   z-index: 2;
 }
