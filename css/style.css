@@ -489,6 +489,7 @@ body> input[type=radio] {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 p.slider-title {
   display: block;
@@ -572,10 +573,10 @@ p.slider-title {
   border-radius: 15px;
 }
 .banner-left {
-  background: transparent url(../img/raspberry-bg1200.jpg) no-repeat;
+  background: #a00021 url(../img/raspberry-bg1200.jpg) no-repeat;
 }
 .banner-right {
-  background: transparent url(../img/chocolate-bg1200.jpg) no-repeat;
+  background: #55311f url(../img/chocolate-bg1200.jpg) no-repeat;
 }
 .banners span {
   font-family: inherit;
@@ -710,7 +711,7 @@ p.slider-title {
   padding: 25px 20px;
 /*  padding: 25px 2.33%;*/
   font-size: 0;
-  background: transparent url(../img/waffle-pattern.jpg);
+  background: #eee3cc url(../img/waffle-pattern.jpg);
   color: #000000;
   border-radius: 15px;
 }
@@ -782,7 +783,7 @@ h2.about-title {
   min-height: 220px;
   padding: 22px 20px 30px;
 /*  padding: 22px 2.35% 30px;*/
-  background: transparent url("../img/strawberry-bg1200.jpg") no-repeat right;
+  background: #ffffff url("../img/strawberry-bg1200.jpg") no-repeat right;
   border-radius: 15px;
 }
 .blog-news a {
@@ -795,6 +796,7 @@ h2.about-title {
   color: #353535;
   border-bottom: none;
   text-decoration: underline;
+  vertical-align: top;
 }
 .blog-news span {
   background: rgba(256,256,256,0.6);
@@ -833,6 +835,7 @@ h2.about-title {
   font-weight: 400;
 }
 .mailing input {
+  float: left;
 /*  width: 229px;*/
   max-width: 72.3%;
   min-width: 62%;
@@ -1267,7 +1270,7 @@ input[type=checkbox]:checked + label:active::before {
   margin-top: 0px;
   padding-top: 5px;
 /*  padding-left: 7px;*/
-  padding-left: 4.17%;
+  padding-left: 4.2%;
   z-index: 5;
 }
 .catalog-title a {
@@ -1309,7 +1312,9 @@ input[type=checkbox]:checked + label:active::before {
   left: 50%;
 /*  width: 220px;*/
   width: 110%;
-/*  height: 362px;*/
+/*  min-height: 362px;*/
+/*  height: 405px;*/
+  height: 126%;
   z-index: 4;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1317,6 +1322,7 @@ input[type=checkbox]:checked + label:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-position: center 9px;
+  background-size: 90.91%;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -1326,15 +1332,16 @@ input[type=checkbox]:checked + label:active::before {
   padding-bottom: 64px;
 }
 .mask .mini-btn {
-  position: relative;
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
   display: block;
   width: 200px;
-  margin: 0px auto 17px;
+  margin-left: -100px;
   padding: 11px;
   z-index: 6;
   text-align: center;
 }
-/*
 .catalog-item .mask1 {
   background-image: url("../img/catalog-card1.png");
 }
@@ -1371,7 +1378,6 @@ input[type=checkbox]:checked + label:active::before {
 .catalog-item .mask12 {
   background-image: url("../img/catalog-card12.png");
 }
-*/
 .catalog-item:hover {
   z-index: 2;
 }
@@ -1387,16 +1393,20 @@ input[type=checkbox]:checked + label:active::before {
 /*Каталог - Переключатель страниц*/
 .page-number {
   min-width: 200px;
-  margin: 43px 10px 0px;
-  padding-bottom: 30px; 
+  margin: 43px 3px 0px 1.11%;
+/*  padding-bottom: 30px; */
   font-size: 16px;
-  white-space: nowrap;
-  border-bottom: 1px solid rgba(256,256,256,0.3);
-}
-.page-number ul {
-  margin-right: -6px;
   list-style: none;
   text-align: right;
+  white-space: nowrap;
+}
+.page-number::after {
+  display: block;
+  content: "";
+  height: 1px;
+  margin-right: 1.11%;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .page-number li {
   display: inline-block;
@@ -1410,8 +1420,8 @@ input[type=checkbox]:checked + label:active::before {
   width: 27px;
   height: 26px;
   margin: 0;
-  margin-right: 2px;
-  margin-left: -3px;
+/*  margin-right: 2px;*/
+  margin-left: -2px;
   padding-top: 5px;
   text-decoration: none;
   font-size: 16px;
@@ -1433,12 +1443,14 @@ input[type=checkbox]:checked + label:active::before {
 .page-number .prev,
 .page-number .prev:hover,
 .page-number .prev:active {
+  margin-right: 3px;
   background: transparent url("../img/sprite.png") no-repeat -533px 1px;
   text-indent: -9999px;
 }
 .page-number .next,
 .page-number .next:hover,
 .page-number .next:active {
+  margin-left: 3px;
   background: transparent url("../img/sprite.png") no-repeat -515px 1px;
   text-indent: -9999px;
 }
@@ -1650,11 +1662,11 @@ textarea + .label-box .modal-label {
 */
 .modal-content .modal-field:hover {
   border: 3px solid #d3d3d2;
-  padding: 9px 13px;
+  padding: 8px 13px;
 }
 .modal-content .modal-field:focus {
   border: 3px solid #5b9ddf;
-  padding: 9px 13px;
+  padding: 8px 13px;
 }
 .modal-content .modal-field:valid {
   font-weight: 700;
