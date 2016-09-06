@@ -123,7 +123,7 @@ header .box-center {
   /* Позиционирование задано только ради величины z-index (отображение выпадающего меню) и блока Часы работы/телефон */
   min-height: 75px;
 /*  padding: 10px 20px 0;*/
-  padding: 10px 2.22% 0;
+  padding: 10px 2% 0;
   z-index: 1;
 }
 header .box-center::after {
@@ -234,7 +234,7 @@ header .box-center::after {
   list-style: none;
   background: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0 20px 20px 0 #000000;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .menu-catalog .menu-item {
   display: block;
@@ -294,7 +294,7 @@ header .box-center::after {
   float: right;
   width: 300px;
 /*  width: 33.33%;*/
-  margin-top: 13px;
+  margin-top: 12px;
   text-align: right;
 }
 .user .user-search,
@@ -313,7 +313,7 @@ header .box-center::after {
 .user-basket>a {
   display: inline-block;
 /*  height: 32px;*/
-  padding: 9px 0;
+  padding: 8px 0;
   font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
@@ -343,7 +343,7 @@ header .box-center::after {
   width: 24px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -211px -4px;
+  background: transparent url("../img/sprite.png") no-repeat -211px -5px;
 }
 .user .user-btn-basket {
   position: relative;
@@ -357,7 +357,7 @@ header .box-center::after {
   width: 22px;
   height: 22px;
   content:"";
-  background: transparent url("../img/sprite.png") no-repeat -5px -3px;
+  background: transparent url("../img/sprite.png") no-repeat -5px -4px;
 }
 .user a[class^="user-btn"]:hover {
   color: #000000;
@@ -410,20 +410,23 @@ header .box-center::after {
 /*Блок телефон-часы работы*/
 .header-contact {
   position: absolute;
-  top: 71px;
+  top: 72px;
   right: 2.22%;
   z-index: 5;
   width: 175px;
   text-align: right;
 }
 .header-contact .working-hour {
-  margin-right: -3px;
+  display: block;
+  margin-bottom: -10px;
   font-family: "Roboto", "Arial", serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
 }
 .header-contact .tel {
+  display: block;
+  margin-top: -10px;
   font-family: "Roboto", "Arial", serif;
   font-size: 22px;
   line-height: 26px;
@@ -461,7 +464,7 @@ body> input[type=radio] {
   float: left;
 /*  width: 880px;*/
   width: 33.33%;
-  min-height: 562px;
+  min-height: 561px;
   text-align: center;
 }
 .clearfix:after {
@@ -472,7 +475,7 @@ body> input[type=radio] {
 .slider-controls {
   position: absolute;
   top: 478px;
-  left: 1px;
+  left: 6px;
   z-index: 20;
   width: 100px;
   text-align: center;
@@ -491,7 +494,7 @@ p.slider-title {
   display: block;
   width: 700px;
 /*  margin: 308px 0 50px 98px;*/
-  margin: 308px auto 37px;
+  margin: 306px auto 40px;
   font-family: "Roboto", "Arial", serif;
   font-size: 60px;
   line-height: 60px;  
@@ -502,7 +505,7 @@ p.slider-title {
 .slider-box a {
   width: 300px;
   height: 30px;
-  padding: 10px 38px 15px;
+  padding: 12px 40px 13px;
   border-radius: 30px;
   text-align: center;
   font-family: "Roboto", "Arial", serif;
@@ -539,17 +542,17 @@ p.slider-title {
 }
 #btn-1:checked ~ .toggler-bg { 
     background: 
-    url("../img/ice-cream1.png") no-repeat 50% 85px,
+    url("../img/ice-cream1.png") no-repeat 50% 84px,
     #849d8f url("../img/lighting1.png") no-repeat 50% 0;
 }
 #btn-2:checked ~ .toggler-bg { 
     background: 
-    url("../img/ice-cream2.png") no-repeat 50% 85px,
+    url("../img/ice-cream2.png") no-repeat 50% 84px,
     #8996a6 url("../img/lighting2.png") no-repeat 50% 0;
 }
 #btn-3:checked ~ .toggler-bg { 
     background: 
-    url("../img/ice-cream3.png") no-repeat 50% 85px,
+    url("../img/ice-cream3.png") no-repeat 50% 84px,
     #9d8b84 url("../img/lighting3.png") no-repeat 50% 0;
 }
 #btn-1:checked ~ .toggler-bg label[for="btn-1"],
@@ -561,7 +564,7 @@ p.slider-title {
 .banner-left,
 .banner-right {
   min-height: 229px;
-  padding: 15px 18px;
+  padding: 15px 20px 15px 18px;
   font-family: "Roboto", "Arial", serif;
   font-size: 18px;
   font-weight: 700;
@@ -582,7 +585,7 @@ p.slider-title {
 }
 .banners p {
   min-height: 63px;
-  margin: 18px 0 24px;
+  margin: 15px 0 26px;
 }
 .banners a {
   float: right;
@@ -590,7 +593,7 @@ p.slider-title {
 }
 .mini-btn {
   height: 45px;
-  padding: 10px 22px;
+  padding: 10px 23px 13px 22px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -638,7 +641,7 @@ p.slider-title {
 }
 .catalog-item .catalog-price {
   position: relative;
-  margin-top: -62px;
+  margin-top: -64px;
   font-size: 45px;
   font-weight: 600;
   line-height: 45px;
@@ -723,43 +726,44 @@ h2.about-title {
   position: relative;
   display: inline-block;
 /*  width: 342px;*/
-  width: 41.5%;
-  margin: 21px 0 0 56px;
+  max-width: 48%;
+  min-width: 47.8%;
+  margin: 22px 0 0;
 /*  margin: 22px 0 0 6.7%;*/
-  padding: 0;
+  padding-left: 56px;
   font-family: "Roboto", "Arial", serif;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 22px;
   color: #323232;
   font-weight: 400;
   vertical-align: top;
 }
 .about-block p:nth-of-type(2n+1) {
 /*  width: 343px;*/
-  width: 42.2%;
+  max-width: 48.7%;
 /*  margin-right: 22px;*/
-  margin-right: 2.6%;
+  margin-right: 2.5%;
 }
 .about-block p::before {
   position: absolute;
   top: -13px;
-  left: -58px;
+  left: 0;
   content:"";
   width: 49px;
   height: 49px;
   background: transparent url("../img/sprite.png") no-repeat;
 }
 .about-block .ice-cream::before {
-  background-position: -619px -4px;
+  background-position: -620px -4px;
 }
 .about-block .cow::before {
-  background-position: -152px -4px;
+  background-position: -152px -5px;
 }
 .about-block .leaf::before {
-  background-position: -375px -4px;
+  background-position: -377px -4px;
 }
 .about-block .term::before {
-  background-position: -678px -4px;
+  background-position: -679px -5px;
 }
 /*Главная - блог и подписка*/
 .block-row:last-of-type {
@@ -819,7 +823,7 @@ h2.about-title {
 }
 .mailing p {
   min-height: 86px;
-  margin-top: 13px;
+  margin-top: 11px;
   margin-bottom: 15px; 
 }
 .mailing form {
@@ -830,9 +834,10 @@ h2.about-title {
 }
 .mailing input {
 /*  width: 229px;*/
-  width: 61.85%;
+  max-width: 72.3%;
+  min-width: 62%;
   margin-right: 6px;
-  padding: 9px 15px;
+  padding: 9px 12px;
 /*  padding: 9px 3.76%;*/
   border-radius: 5px;
   vertical-align: top;
@@ -847,6 +852,7 @@ h2.about-title {
   width: 129px;
   height: 44px;
   margin-top: 0;
+  padding: 9px 18px 11px;
   outline: none;
   border: none;
 }
@@ -863,7 +869,7 @@ h2.about-title {
   width: 302px;
   height: 305px;
 /*  margin-left: 128px;*/
-  margin-left: 14.3%;
+  margin-left: 20%;
   padding: 18px 25px;
   font-family: "Roboto", "Arial", serif;
   font-size: 18px;
@@ -919,7 +925,8 @@ main .catalog-center {
 }
 /*Каталог - Хлебные крошки*/
 .breadcrumbs {
-  margin: 10px 0 0 20px;
+/*  margin: 10px 0 0 20px;*/
+  margin: 10px 0 0 2.22%;
 }
 .breadcrumbs ul {
   list-style: none;
@@ -950,7 +957,8 @@ main .catalog-center {
 }
 .catalog-center h1 {
   margin-top: 2px;
-  margin-left: 20px;
+/*  margin-left: 20px;*/
+  margin-left: 2.22%;
   margin-bottom: 20px;
   font-family: "Roboto", "Arial", serif;
   font-size: 35px;
@@ -960,12 +968,14 @@ main .catalog-center {
 }
 /*Каталог - Фильтры*/
 .filters {
-  margin: 0 20px;
+/*  margin: 0 20px;*/
+  margin: 0 2.22%;
   text-align: left;
 }
 .filters fieldset,
 .filters select,
 .filters input,
+.filters button,
 .filters .range-controls {
   display: inline-block;
   vertical-align: middle;
@@ -977,9 +987,9 @@ main .catalog-center {
 }
 .filters .select-container,
 .filters .range-controls,
-.filters input[type=submit],
+.filters button[type=submit],
 .fatness {
-  margin-top: 7px;
+  margin-top: 6px;
   margin-right: 10px;
   padding: 8px 10px 7px;
   border-radius: 18px;
@@ -1115,7 +1125,6 @@ main .catalog-center {
 }
 .filters .label-fatness {
   margin-left: 42px;
-/*  margin-right: 100px;*/
 }
 .filters .fatness {
   width: 415px;
@@ -1206,10 +1215,10 @@ input[type=checkbox]:checked + label:active::before {
   width: 250px;
   margin-top: 16px;
 }
-.filters input[type="submit"] {
+.filters button[type="submit"] {
   width: 145px;
-  margin: -37px 0 0 11px;
-  padding:  8px 10px 5px 10px;
+  margin: -36px 0 0 11px;
+  padding:  8px 10px 6px 10px;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.2);
   outline: none;
@@ -1217,11 +1226,11 @@ input[type=checkbox]:checked + label:active::before {
   border: 2px solid #ffffff;
   cursor: pointer;
 }
-.filters input[type="submit"]:hover {
+.filters button[type="submit"]:hover {
   color: #000000;
   background: #ffffff;
 }
-.filters input[type="submit"]:active {
+.filters button[type="submit"]:active {
   color: #323232;
   background: #ffffff;
   opacity: 0.8;
@@ -1230,7 +1239,7 @@ input[type=checkbox]:checked + label:active::before {
 /*Каталог - Карточки товара*/
 .catalog .catalog-item {
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   font-family: "Roboto", "Arial", serif;
   font-size: 16px;
   line-height: 22px;
@@ -1238,7 +1247,7 @@ input[type=checkbox]:checked + label:active::before {
 }
 .catalog p.catalog-price {
   position: relative;
-  margin-top: -67px;
+  margin-top: -63px;
   margin-bottom: 15px;
   z-index: 5;
   font-family: "Roboto", "Arial", serif;
@@ -1248,9 +1257,9 @@ input[type=checkbox]:checked + label:active::before {
 .catalog .catalog-title {
   position: relative;
 /*  width: 192px;*/
-  width: 96%;
+  width: 97.5%;
   margin-top: 0px;
-  padding-top: 9px;
+  padding-top: 5px;
 /*  padding-left: 7px;*/
   padding-left: 4.17%;
   z-index: 5;
@@ -1308,13 +1317,13 @@ input[type=checkbox]:checked + label:active::before {
 .mask .catalog-card {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 84px;
+  padding-bottom: 64px;
 }
 .mask .mini-btn {
   position: relative;
   display: block;
   width: 200px;
-  margin: 0px auto 8px;
+  margin: 0px auto 17px;
   padding: 11px;
   z-index: 6;
   text-align: center;
@@ -1379,7 +1388,7 @@ input[type=checkbox]:checked + label:active::before {
   border-bottom: 1px solid rgba(256,256,256,0.3);
 }
 .page-number ul {
-  margin-right: -10px;
+  margin-right: -6px;
   list-style: none;
   text-align: right;
 }
@@ -1441,7 +1450,7 @@ input[type=checkbox]:checked + label:active::before {
 /*Подвал*/
 footer .box-center {
 /*  padding: 19px 20px 22px;*/
-  padding: 26px 2.22% 22px;
+  padding: 26px 2% 22px;
 }
 footer .box-center,
 footer a {
@@ -1465,14 +1474,14 @@ footer .social-btn {
   float: left;
 /*  width: 230px;*/
   padding-top: 13px;
-  padding-left: 3px;
+  padding-left: 4px;
 }
 footer .social {
-  width: 31px;
-  height: 31px;
-  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
   border-bottom: none;
-  box-shadow: 0 0 0 3px #c2cec7;
+  box-shadow: 0 0 0 3px rgba(256,256,256, 0.6);
   border-radius: 50%;
   text-align: center;
   background: transparent url("../img/sprite.png");
@@ -1537,7 +1546,7 @@ footer a.social-vk:active {
 .footer-menu .for-caterer::before {
   position: absolute;
   top: 1px;
-  left: -16px;
+  left: -17px;
   display:block;
   content: "";
   width: 15px;
