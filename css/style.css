@@ -838,7 +838,6 @@ h2.about-title {
   min-width: 62%;
   margin-right: 6px;
   padding: 9px 12px;
-/*  padding: 9px 3.76%;*/
   border-radius: 5px;
   vertical-align: top;
   background-color: #ffffff;
@@ -862,10 +861,18 @@ h2.about-title {
   min-height: 428px;
   background: transparent url("../img/map1200.jpg") no-repeat center;
 }
-.card-place .card-contacts {
+.contacts-box {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card-contacts {
   position: absolute;
   bottom: 62px;
-  left: 50%;
+  top: 62px;
+  right: 2.22%;
+  z-index: 1;
   width: 302px;
   height: 305px;
 /*  margin-left: 128px;*/
@@ -904,7 +911,6 @@ h2.about-title {
   margin-top: 25px;
   padding: 10px 22px;
   text-align: center;
-/*  padding-left: 30px;*/
 }
 /*
 .card-place .card-marker {
